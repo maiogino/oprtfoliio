@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_workall.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/work.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/thankyou.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'twp3kga',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_inner">
+            <h1 class="logo">
+                <a href="./index.html">Mai Portfolio</a>
+            </h1>
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="./work_all.html">WORKS</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+        </div>
+
+        <picture>
+            <img src="./picture/1x/HOME1.png" alt="海の写真" />
+        </picture>
+
+        <nav class="header-nav-sp">
+            <ul>
+                <li>
+                    <a href="./index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="./work_all.html">WORKS</a>
+                </li>
+                <li>
+                    <a href="./about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="./contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="background">
+        <div class="max-width">
+            <section class="thankyou_box">
+                <p class="title">Thankyou</p>
+                <p class="sub_title">お問い合わせ完了しました</p>
+    
+            <div class="figure_thankyou">
+                <img src="./picture/1x/figure1.png" alt="背景飾り" />
+            </div>
+                <div class="thankyou">
+                    <p>
+                        お問い合わせありがとうございました。
+                        <br>
+                        確認後、3日以内に回答させていただきます。
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="return">
+        <p>
+            <a class="btn_return btn_blue" href="./index.html">
+                Homeにもどる
+            </a>
+        </p>
+    </div>
+
+    <footer class="footer">
+        <div class="max-width">
+            <div class="footer_inner">
+                <nav class="footer-nav">
+                    <ul>
+                        <li>
+                            <a href="./work_all.html">WORKS</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <p id="company">©︎2024 mai All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        $(function () {
+            $(".hamburger").click(function () {
+                $(".hamburger").toggleClass("open");
+                $(".header-nav-sp").fadeToggle();
+            });
+        });
+    </script>
+</body>
+
+</html>

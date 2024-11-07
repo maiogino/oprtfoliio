@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contactお問い合わせ</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style_workall.css" />
+  <link rel="stylesheet" href="./css/about.css" />
+  <link rel="stylesheet" href="./css/work.css">
+  <link rel="stylesheet" href="./css/contact.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    (function (d) {
+      var config = {
+        kitId: "twp3kga",
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className =
+            h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || (a && a != "complete" && a != "loaded")) return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config);
+        } catch (e) { }
+      };
+      s.parentNode.insertBefore(tk, s);
+    })(document);
+  </script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="header_inner">
+      <h1 class="logo">
+        <a href="./index.html">Mai Portfolio</a>
+      </h1>
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="./index.html">HOME</a>
+          </li>
+          <li>
+            <a href="./work_all.html">WORKS</a>
+          </li>
+          <li>
+            <a href="./about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="./contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="hamburger">
+      <span></span>
+    </div>
+
+    <picture>
+      <img src="./picture/1x/HOME1.png" alt="海の写真" />
+    </picture>
+
+    <nav class="header-nav-sp">
+      <ul>
+        <li>
+          <a href="./index.html">HOME</a>
+        </li>
+        <li>
+          <a href="./work_all.html">WORKS</a>
+        </li>
+        <li>
+          <a href="./about.html">ABOUT</a>
+        </li>
+        <li>
+          <a href="./contact.html">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="background">
+    <div class="max-width">
+      <section class="contact_box">
+        <p class="title">Contact</p>
+        <p class="sub_title">お問い合わせ</p>
+      
+      <p class="contact_text">
+        当ポートフォリオサイトにご訪問いただき、誠にありがとうございます。
+        <br>制作のご依頼やご相談、ご不明点などお気軽にご連絡ください。
+        <br>お問い合わせはこちらのフォームに必要事項をご記入の上、「送信」ボタンをクリックしてください。
+      </p>
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdddiG14GSy-BaY-Opj-8XMR-Cxt0u3yKhkUGCslNCU-GZ0kw/formResponse"
+        method="post" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
+        <div class="c-form__item">
+          <label class="c-form__label" for="field-name">名前・会社名<span class="c-form__required">(必須)</span></label>
+          <input name="entry.344289677" class="c-form__input" id="field-name" placeholder="" type="text"
+            required="required" />
+        </div>
+        <div class="c-form__item">
+          <label class="c-form__label" for="field-mail">メールアドレス<span class="c-form__required">(必須)</span></label>
+          <input name="entry.138204788" class="c-form__input" id="field-mail" placeholder="" type="email"
+            required="required" />
+        </div>
+        <div class="c-form__item">
+          <label class="c-form__label" for="field-message">お問い合わせ内容<span class="c-form__required">(必須)</span></label>
+          <textarea name="entry.2026633891" class="c-form__input" id="field-message" placeholder=""></textarea>
+        </div>
+        <div class="c-form__submit">
+          <button type="submit">送信</button>
+        </div>
+      </form>
+    </section>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="max-width">
+      <div class="footer_inner">
+        <nav class="footer-nav">
+          <ul>
+            <li>
+              <a href="./work_all.html">WORKS</a>
+            </li>
+            <li>
+              <a href="./about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="./contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p id="company">©︎2024 mai All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    $(function () {
+      $(".hamburger").click(function () {
+        $(".hamburger").toggleClass("open");
+        $(".header-nav-sp").fadeToggle();
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    let submitted = false;
+  </script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+    onload="if(submitted){window.location='./thankyou.html';}"></iframe>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* .background {
+    background-color: #edfafd;
+    margin-top: -200px;
+} */
+
+.thankyou_box{
+    position: relative;
+    padding-bottom: 250px;
+}
+.figure_thankyou{
+    width: 60%;
+    margin:0 auto;
+    
+    /* float: right; */
+    /* position: absolute; */
+    /* z-index: 9997; */
+}
+
+
+.figure_thankyou img{
+    margin-top: -180px;
+}
+
+/* @media screen and (max-width:1115px) {
+    .figure_thankyou img{
+        height: 100%;
+        object-fit: cover;
+    }
+} */
+
+.thankyou p{
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    /* margin: -570px auto 0; */
+    text-align: center;
+    /* padding-bottom: 468px; */
+    font-size: 20px;
+    line-height: 1.5;
+    
+    
+}
+
+.btn_return{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    padding: 25px 80px;
+    border-radius: 50vh;
+    position: relative;
+    /* margin-top: 45px; */
+    font-size: 20px;
+    margin: -200px auto 100px;
+    color: #fff;
+}
+
